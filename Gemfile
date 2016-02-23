@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Require a specific ruby version
-ruby '2.2.4'
+ruby '2.2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -17,6 +17,12 @@ gem 'rails_12factor', group: :production
 
 # Add bootstrap for improving the looks of the website
 gem 'bootstrap-sass'
+
+# Add Stripe payment processing 
+gem 'stripe'
+
+# Figaro gem for securely managing credentials and API secret keys
+gem 'figaro'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
