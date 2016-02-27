@@ -24,6 +24,9 @@ gem 'stripe'
 # Figaro gem for securely managing credentials and API secret keys
 gem 'figaro'
 
+# Add letter opener gem for pushing emails in development mode
+gem 'letter_opener', group: :development
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
