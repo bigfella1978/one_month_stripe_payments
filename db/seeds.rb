@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+
 placenta_wash = Product.create(title: "Placenta Wash", 
  subtitle: "Nippon Beauty", author: "Chris Dorman", 
  length: "30 minutes", author_image_name: "teacher-image.jpg", 
@@ -26,7 +28,7 @@ placenta_wash = Product.create(title: "Placenta Wash",
  <p>Follow me on Twitter <a href="https://twitter.com/mattangriffel" target="_blank">@mattangriffel</a></p>})
 
 growth_hacking_monthly = Product.create(title: "Growth Hacking Monthly", 
- subtitle: "Ongoing Course", author: "Mattan Griffel", 
+ subtitle: "Ongoing Course", author: "Chris Dorman", 
  length: "6 months", author_image_name: "teacher-image.jpg", 
  price: "4.99", sku: "GROHACK2", download_url: "https://s3.amazonaws.com/one-month-stripe-payments/Peter+Bell+Resume.pdf", 
  details: "We'll charge you monthly for unlimited access to our mentoring team", description: %{<p>A growth hacker is a rare combination: someone with the right marketing and technical skills who can come up with clever marketing hacks and also track their results.</p>
