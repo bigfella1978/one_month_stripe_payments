@@ -33,6 +33,12 @@ gem 'activeadmin', '~> 1.0.0.pre2'
 # Add devise authentication login system required for active admin
 gem 'devise', '~> 3.5', '>= 3.5.6'
 
+# Add better errors gem to help us debug and understand errors easier 
+gem 'better_errors', group: :development
+
+# Add quiet assets gem to quiten the server log output to make debugging easier
+gem 'quiet_assets', group: :development
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

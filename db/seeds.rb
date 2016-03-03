@@ -27,11 +27,11 @@ placenta_wash = Product.create(title: "Placenta Wash",
  </p>
  <p>Follow me on Twitter <a href="https://twitter.com/mattangriffel" target="_blank">@mattangriffel</a></p>})
 
-growth_hacking_monthly = Product.create(title: "Growth Hacking Monthly", 
- subtitle: "Ongoing Course", author: "Chris Dorman", 
- length: "6 months", author_image_name: "teacher-image.jpg", 
- price: "4.99", sku: "GROHACK2", download_url: "https://s3.amazonaws.com/one-month-stripe-payments/Peter+Bell+Resume.pdf", 
- details: "We'll charge you monthly for unlimited access to our mentoring team", description: %{<p>A growth hacker is a rare combination: someone with the right marketing and technical skills who can come up with clever marketing hacks and also track their results.</p>
+jeju_mask = Product.create(title: "Innisfree clay mask", 
+ subtitle: "Nippon Beauty", author: "Chris Dorman", 
+ length: "6 months", author_image_name: "innisfree-image.jpg", 
+ price: "12.99", sku: "GROHACK2", download_url: "https://s3.amazonaws.com/one-month-stripe-payments/Peter+Bell+Resume.pdf", 
+ details: "Innisfree Super Volcanic Pore Clay Mask combines 5-in-1 functions", description: %{<p>Innisfree Super Volcanic Pore Clay Mask contains super volcanic cluster capsules, which powerfully adsorbs sebum to intensively resolve pore concerns. This new formula is infused with double the amount of Volcanic Ash of that of the original version, especially suitable for oily skin.</p>
 
  <p>In this series, Mattan Griffel introduces you to the concept of Growth Hacking and shares his favorite tips for getting started as a growth hacker.</p>
  <p><strong>What You'll Learn</strong></p>
