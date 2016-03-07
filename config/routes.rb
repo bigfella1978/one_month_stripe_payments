@@ -7,8 +7,12 @@ root 'pages#home'
 # support stripe payments through charges
 resources :charges
 
+# route for showing products
+resources :products, only: [:index, :show]
+
 # route for showing purchases
 resources :purchases, only: [:show]
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

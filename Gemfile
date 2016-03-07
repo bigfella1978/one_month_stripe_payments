@@ -33,9 +33,6 @@ gem 'activeadmin', '~> 1.0.0.pre2'
 # Add devise authentication login system required for active admin
 gem 'devise', '~> 3.5', '>= 3.5.6'
 
-# Add better errors gem to help us debug and understand errors easier 
-gem 'better_errors', group: :development
-
 # Add quiet assets gem to quiten the server log output to make debugging easier
 gem 'quiet_assets', group: :development
 
@@ -65,6 +62,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# Add better errors gem to help us debug and understand errors easier 
+group :development do
+  gem "better_errors"
+end 
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
