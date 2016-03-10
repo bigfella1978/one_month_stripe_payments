@@ -1,7 +1,13 @@
+<% content_for :head do %>
+  <div id="price-container">
+    <span class="glyphicon glyphicon-tag"></span><span class="price">$4.99</span>
+  </div>
+  <%= image_tag(@product.header_image_name, id: "content-header-img", alt: "#{@product.title}") %>
+<% end %>
 
     <section id="content-details" class="row clearfix">
         <article id="details-article" class="col-sm-8">
-            <h1 id="article-title"><%= @product.title %> <span class="font-weight-light"><%= @product.subtitle %></span></h1>
+            <h1 id="article-title"><%= @product.title %> <div class="font-weight-light"><%= @product.subtitle %></div></h1>
             <h3><small>By <a href="#" data-toggle="modal" data-target="#author-modal"><%= @product.author %></a></small></h3>
 
             <%= raw @product.description %>

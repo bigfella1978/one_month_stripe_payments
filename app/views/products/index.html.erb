@@ -1,4 +1,8 @@
-<section id="content-details" class="row clearfix">
+<% content_for :head do %>
+  <%= image_tag('skincare.png', id: 'content-header-img', alt: 'check out our products') %>
+<% end %>	
+
+<section id="article-title" class="row clearfix">
     <article id="details-article">
         <h1 id="article-title">Nippon Beauty Products</h1>
 	</article>
@@ -7,8 +11,8 @@
 <section id="products">
 <% @products.each do |product| %>
 	 <div class="product clearfix">
-	   <a href="product-detail.html">
-	    <div class="product-image-container">
+	   <a href="<%=product_path(product) %>"</a>
+	   	<div class="product-image-container">
 	     <img src="<%= asset_path product.thumbnail_image_name %>" alt="<%= product.title %>"/>
 	     <span class="product-price">$<%= product.price %></span>
 	    </div>
@@ -17,4 +21,6 @@
 <% end %>
 
  </section>
+
+
 
